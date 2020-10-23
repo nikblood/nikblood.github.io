@@ -1,0 +1,93 @@
+/* ВЕРХНЯЯ ПАНЕЛЬ НАЧАЛО */
+body {
+  background-color: black;
+}
+.topnav {
+  background-color: black;
+  overflow: hidden;
+  border-bottom: 5px solid orange;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  position: relative;
+  display: block;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 900;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.nub {
+  float: left;
+  background-color: ;
+  color: orange;
+}
+.topnav a.onas {
+  float: right;
+  background-color: ;
+  color: orange;
+}
+/* ВВЕРХНЯЯ ПАНЕЛЬ КОНЕЦ */
+/* ВИДЕО+ФОРМА НАЧАЛО */
+.imglogo {
+  border: solid orange 5px;
+}
+.h1main {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  color: orange;
+  border: solid orange 5px;
+}
+.form {
+  border: orange solid 5px;
+}
+.form input {
+  text-align: center;
+  height: 50px;
+  width: 250px;
+  margin-top: 10px;
+}
+.form,
+.img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.form img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form p {
+  color: orange;
+  font-weight: 900;
+  font-size: 18px;
+}
+/*ОТВЕТЫ НА ОСНОВНЫЕ ВОПРОСЫ*/
+.otvet {
+  margin-top: 100 px;
+  color: orange;
+  border-top: solid orange 5 px;
+  border-left: solid orange 5 px;
+  border-right: solid orange 5 px;
+}
+.i1 {
+  margin-top: 50px;
+  border: solid 5px orange;
+  font-weight: 900;
+  font-size: 17px;
+}
+.i1 img,
+p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.p {
+  color: orange;
+}
