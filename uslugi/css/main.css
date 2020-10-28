@@ -1,0 +1,68 @@
+body{
+	background-color: black;
+}
+
+/*ВЕРХНЯЯ НАВИГАЦИОНАЯ ПАНЕЛЬ*/
+.menu:hover{
+	background-image: url(https://document-export.canva.com/a3qHw/DAELT7a3qHw/37/thumbnail/lyhQ3jQF2vP_O3ZWNRHhlA-0001-12398130708.png);
+}
+.top {
+  background-color: black;
+  border-bottom: solid 5px orange;
+}
+.top a {
+  color: orange;
+}
+.teg a {
+  color: orange;
+  border-bottom: 2px solid #ffa500;
+}
+.spis {
+  color: orange;
+}
+.drop {
+  background-color: orange;
+}
+.drop a {
+  color: black;
+
+}
+/*VNUTRI SAITA KARUSEL*/
+.karusel {
+	border-bottom: solid orange 5px;
+	}
+	/*USLUGI I KARTI*/
+.uslugi{
+margin-top: 50px;
+}
+.uslugi h2{
+	color:orange;
+
+}
+.cards{
+	margin-top: 100px;
+}
+.card{
+	background-color: orange;
+	
+
+}
+.card h5 , p {
+	color: black;
+}
+.card a{
+	color:black;
+
+}
+.card img{
+	height: 30%;
+	width: 50%;
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin:auto;
+}
+
+@media (min-width: 768px) {.dropdown:hover .dropdown-menu{margin-top:0;display:block}
