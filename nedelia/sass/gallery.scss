@@ -1,0 +1,288 @@
+    *,
+    *:before,
+    *:after {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        background-color: rgb(26, 25, 25);
+    }
+    
+    .row {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .card_wrapper {
+        width: 1000px;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 50px;
+        margin-top: 50px;
+        min-width: 0;
+    }
+    
+    .card {
+        display: flex;
+        background-size: 300px 300px;
+        width: 300px;
+        height: 300px;
+        margin-top: 30px;
+        border-bottom: 30px;
+    }
+    
+    .joy {
+        background-image: url('../img/card1..jpg');
+    }
+    
+    .joy1 {
+        background-image: url('../img/магазин/1.jpg');
+    }
+    
+    .joy2 {
+        background-image: url('../img/дом/1.jpg');
+    }
+    
+    .joy3 {
+        background-image: url('../img/офис/1.jpg');
+    }
+    
+    .joy4 {
+        background-image: url('../img/евро дом/1.jpg');
+    }
+    
+    .joy5 {
+        background-image: url('../img/катедж/1.jpg');
+    }
+    
+    .joy6 {
+        background-image: url('../img/серая/1.jpg');
+    }
+    
+    .joy7 {
+        background-image: url('../img/евро квартира/1.jpg');
+    }
+    
+    .joy8 {
+        background-image: url('../img/люстра/1.jpg');
+    }
+    
+    .place {
+        width: 300px;
+        height: 50px;
+        display: flex;
+        background-color: orange;
+        opacity: 0;
+        margin-top: 250px;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    
+    .card:hover {
+        background-color: black;
+        opacity: 0.5;
+        transition: all 0, 5s ease;
+        .place {
+            opacity: 1;
+        }
+    }
+    
+    .menu_1_kvartiri,
+    .menu_2_kvartiri,
+    .menu_3_kvartiri,
+    .menu_4_kvartiri,
+    .menu_5_kvartiri,
+    .menu_6_kvartiri,
+    .menu_7_kvartiri,
+    .menu_8_kvartiri,
+    .menu_9_kvartiri {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 1000px;
+        height: 600px;
+        opacity: 1;
+        background-color: rgb(240, 240, 240);
+        top: -100%;
+        z-index: 2;
+    }
+    
+    .menu_1_kvartiri.active,
+    .menu_2_kvartiri.active,
+    .menu_3_kvartiri.active,
+    .menu_4_kvartiri.active,
+    .menu_5_kvartiri.active,
+    .menu_6_kvartiri.active,
+    .menu_7_kvartiri.active,
+    .menu_8_kvartiri.active,
+    .menu_9_kvartiri.active {
+        top: 8%;
+        transition: all 0.2s ease;
+    }
+    
+    .close_menu_1,
+    .close_menu_2,
+    .close_menu_3,
+    .close_menu_4,
+    .close_menu_5,
+    .close_menu_6,
+    .close_menu_7,
+    .close_menu_8,
+    .close_menu_9 {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: orange;
+        img {
+            z-index: 1;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    
+    .slider_bar {
+        width: 95%;
+        height: 100%;
+        overflow: hidden;
+        min-width: 0;
+        z-index: 4;
+    }
+    
+    .slide {
+        width: 100%;
+        height: 100%;
+        img {
+            height: 100%;
+            width: 1000px;
+            z-index: 3;
+        }
+    }
+    
+    .slick-track {
+        display: flex;
+    }
+    
+    .menu_1_text,
+    .menu_2_text,
+    .menu_3_text,
+    .menu_4_text,
+    .menu_5_text,
+    .menu_6_text,
+    .menu_7_text,
+    .menu_8_text,
+    .menu_9_text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 100%;
+        background-color: orange;
+    }
+    
+    .link_gallery {
+        background-color: red;
+    }
+    
+    .header_menu>.link_main {
+        background-color: orange;
+    }
+    
+    body.lock {
+        overflow: hidden;
+    }
+    
+    // _____________________media
+    @media screen and (max-width: 568px) and (orientation: portrait) {
+        body.lock {
+            overflow: hidden;
+        }
+        .row {
+            width: 100%;
+            height: 100%;
+        }
+        .card_wrapper {
+            width: 420px;
+            height: 570px;
+            margin-left: 0;
+            margin-top: 0;
+        }
+        // .place {
+        //     width: 130px;
+        //     opacity: 1;
+        // }
+        .card {
+            width: 130px;
+            height: 150px;
+            background-size: 130px 150px;
+        }
+        .place {
+            width: 130px;
+            height: 20px;
+            display: flex;
+            background-color: orange;
+            opacity: 1;
+            margin-top: 130px;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            img {
+                width: 10px;
+                height: 10px;
+            }
+        }
+        .menu_1_kvartiri,
+        .menu_2_kvartiri,
+        .menu_3_kvartiri,
+        .menu_4_kvartiri,
+        .menu_5_kvartiri,
+        .menu_6_kvartiri,
+        .menu_7_kvartiri,
+        .menu_8_kvartiri,
+        .menu_9_kvartiri {
+            width: 400px;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .slider_bar {
+            width: 400px;
+            height: 500px;
+            img {
+                width: 400px;
+                height: 500px;
+            }
+        }
+        .menu_1_text,
+        .menu_2_text,
+        .menu_3_text,
+        .menu_4_text,
+        .menu_5_text,
+        .menu_6_text,
+        .menu_7_text,
+        .menu_8_text,
+        .menu_9_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            background-color: orange;
+        }
+    }
