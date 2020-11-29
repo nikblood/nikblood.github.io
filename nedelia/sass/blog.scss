@@ -41,7 +41,7 @@ body {
     margin-top: 30px;
     border-bottom: 30px;
     background-color: orange;
-    text-align: left;
+    text-align: center;
 }
 
 .blog_img {
@@ -72,9 +72,6 @@ body {
 
 .blog_text {
     width: 100%;
-    p {
-        font-size: 20px;
-    }
 }
 
 @media screen and (max-width: 568px) and (orientation: portrait) {
