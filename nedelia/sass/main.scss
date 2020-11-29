@@ -17,6 +17,10 @@
         }
         
         // _______________навигация
+        p {
+            color: white
+        }
+        
         .header_menu {
             position: fixed;
             display: flex;
@@ -24,12 +28,12 @@
             flex-direction: column;
             justify-content: space-between;
             text-align: center;
-            width: 90px;
+            width: 100px;
             height: 100%;
-            background-color: orange;
+            background-color: rgb(187, 121, 0);
             transition: all 0.8s ease 0s;
             a {
-                color: rgb(26, 25, 25);
+                color: rgb(230, 230, 230);
                 font-family: 'Ubuntu', sans-serif;
                 text-decoration: none;
                 border: none;
@@ -37,6 +41,9 @@
             img {
                 width: 50px;
                 height: 50px;
+            }
+            p {
+                font-size: 19px;
             }
         }
         
