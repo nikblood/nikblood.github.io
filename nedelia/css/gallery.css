@@ -14,6 +14,9 @@ body {
   -webkit-overflow-scrolling: touch;
   background-color: #1a1919; }
 
+a {
+  text-decoration: none; }
+
 .row {
   width: 100%;
   height: 100%;
@@ -40,31 +43,43 @@ body {
   border-bottom: 30px; }
 
 .joy {
-  background-image: url("../img/card1..jpg"); }
+  background-image: url("../img/ББ/1.JPG"); }
 
 .joy1 {
-  background-image: url("../img/магазин/1.jpg"); }
+  background-image: url("../img/гагарин плаза/1.jpg"); }
 
 .joy2 {
-  background-image: url("../img/дом/1.jpg"); }
+  background-image: url("../img/Сумская/1.jpg"); }
 
 .joy3 {
-  background-image: url("../img/офис/1.jpg"); }
+  background-image: url("../img/21Ж/1.jpg"); }
 
 .joy4 {
-  background-image: url("../img/евро дом/1.jpg"); }
+  background-image: url("../img/43Ж 2ая секция/1.jpg"); }
 
 .joy5 {
-  background-image: url("../img/катедж/1.jpg"); }
+  background-image: url("../img/офис афины/1.jpg"); }
 
 .joy6 {
-  background-image: url("../img/серая/1.jpg"); }
+  background-image: url("../img/43Ж 1ая секция/2.jpg"); }
 
 .joy7 {
-  background-image: url("../img/евро квартира/1.jpg"); }
+  background-image: url("../img/43Ж 2секция д/1.jpg"); }
 
 .joy8 {
-  background-image: url("../img/люстра/1.jpg"); }
+  background-image: url("../img/Альтаир/1.jpg"); }
+
+.joy9 {
+  background-image: url("../img/Аркадия/1.jpg"); }
+
+.joy10 {
+  background-image: url("../img/Аркадия 1/1.jpg"); }
+
+.joy11 {
+  background-image: url("../img/Белый парус/1.jpg"); }
+
+.joy12 {
+  background-image: url("../img/Гольфстрим/1.jpg"); }
 
 .place {
   width: 300px;
