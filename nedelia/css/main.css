@@ -38,6 +38,32 @@ p {
   .header_menu p {
     font-size: 19px; }
 
+.main_phonew {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  z-index: 1; }
+
+.main_phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-image: url(../img/For\ Beginers.png);
+  opacity: 0.8;
+  float: right;
+  cursor: pointer;
+  font-size: 0%; }
+  .main_phone img {
+    width: 25px;
+    height: 25px; }
+
+.main_phone:hover {
+  background-color: white;
+  opacity: 1;
+  transition: all 0.8s ease; }
+
 .header__link:hover {
   background-color: #f7bb4d;
   transition: all 0.8s ease 0s;
@@ -126,9 +152,7 @@ p {
   border-radius: 100%;
   right: 0;
   animation: pulsing 5s infinite;
-  transition: pulsing 5s infinite;
-  top: 80%;
-  right: 10%; }
+  transition: pulsing 5s infinite; }
   .call_phone img {
     display: block;
     width: 40px;
@@ -160,8 +184,7 @@ p {
   width: 80%;
   height: 400px;
   background-color: orange;
-  border: solid black 5px;
-  border-radius: 10%;
+  border: solid black 2px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -171,8 +194,12 @@ p {
     color: #1a1919;
     font-family: 'Ubuntu', sans-serif; }
 
+.header_menu.active {
+  bottom: 0;
+  transition: all 0.3s ease 0s; }
+
 .text_call_back {
-  margin-top: 40px; }
+  margin-top: 30px; }
 
 .call__menu.active {
   top: 20%; }
@@ -184,7 +211,8 @@ p {
   background-color: #1a1919;
   color: orange;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
 
 .btn:hover {
   transition: all 0.8s ease 0s;
@@ -195,7 +223,8 @@ p {
   width: 30px;
   height: 30px;
   position: absolute;
-  margin: 0 0 30% 90%; }
+  margin: 0 0 30% 90%;
+  cursor: pointer; }
   .back img {
     width: 30px;
     height: 30px; }
@@ -208,25 +237,25 @@ p {
 input {
   display: block;
   color: black;
-  width: 300px;
+  width: 400px;
   height: 30px;
   text-align: center;
-  margin-top: 10px;
   border: solid 3px #1a1919; }
 
 .call_back_btn {
   width: 200px;
-  background-color: #1a1919;
-  color: orange;
-  margin-top: 10px;
+  margin-top: 20px;
+  background-color: green;
+  color: white;
   border: none;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
   .call_back_btn h1 {
-    color: orange; }
+    color: white; }
 
 .call_back_btn:active {
   transform: translate(0, 3px);
-  background-color: black;
+  background-color: green;
   transition: all 0.1s ease; }
 
 .call_back_btn:hover {
@@ -238,273 +267,825 @@ body.lock {
   overflow: hidden; }
 
 @media (min-width: 320px) and (orientation: portrait) {
-  body.lock {
-    overflow: hidden; }
-
   .header_menu {
-    height: 60px;
-    width: 100%;
     bottom: 0;
-    flex-direction: row; }
-    .header_menu img {
-      width: 30px;
-      height: 30px; }
-    .header_menu p {
-      font-size: 11px; }
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background-color: #bb7900;
+    transition: all 0.8s ease 0s; }
     .header_menu a {
-      width: 15%; }
+      width: 14%;
+      height: 100%;
+      color: #e6e6e6;
+      font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+      border: none; }
+    .header_menu img {
+      width: 100%;
+      height: 60%; }
+    .header_menu p {
+      font-size: 35%; }
 
   .header_menu.active {
-    bottom: 0; }
+    bottom: 0;
+    transition: all 0.5s ease 0s; }
 
   .header__burger {
-    top: -100%; }
+    display: block;
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 13px;
+    width: 60px;
+    height: 25px;
+    transition: all 0.5s ease 0s;
+    z-index: 1;
+    bottom: -100%; }
 
   .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    background-color: #1a1919; }
 
   .logo {
-    font-size: 80px; }
+    font-size: 80px;
+    color: orange; }
 
   .call_phone {
-    width: 50px;
-    height: 50px;
     display: flex;
-    position: none; }
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 100%;
+    right: 0;
+    animation: pulsing 5s infinite;
+    transition: pulsing 5s infinite; }
+    .call_phone img {
+      display: block;
+      width: 20px;
+      height: 20px; }
 
   .call__menu {
-    width: 100%; }
+    width: 90%;
+    height: 50%; }
     .call__menu h1,
     .call__menu h2 {
-      font-size: 25px; }
+      font-size: 21px; }
+
+  .call__menu.active {
+    top: 25%; }
+
+  .btn {
+    width: 100%;
+    height: 60px; }
 
   .back {
-    top: 2%;
-    right: 3%; } }
-@media (min-width: 480px) and (orientation: landscape) {
-  body.lock {
-    overflow: hidden; }
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 0 0 0 85%;
+    top: 0; }
+    .back img {
+      width: 25px;
+      height: 25px; }
 
-  .header_menu {
-    height: 60px;
-    width: 100%;
-    bottom: 0;
-    flex-direction: row; }
-    .header_menu img {
-      width: 30px;
-      height: 30px; }
-    .header_menu p {
-      font-size: 11px; }
-    .header_menu a {
-      width: 15%; }
-
-  .header_menu.active {
-    bottom: 0; }
-
-  .header__burger {
-    top: -100%; }
-
-  .content {
-    width: 100%;
-    height: 200px; }
-
-  .logo {
-    width: 80%; }
-
-  .call__menu {
-    width: 100%;
-    height: 80%; } }
-@media (min-width: 600px) and (orientation: portrait) {
-  body.lock {
-    overflow: hidden; }
-
-  .header_menu {
-    height: 70px;
-    width: 100%;
-    bottom: 0;
-    flex-direction: row; }
-    .header_menu img {
-      width: 40px;
-      height: 40px; }
-    .header_menu p {
-      font-size: 15px; }
-    .header_menu a {
-      width: 15%; }
-
-  .header_menu.active {
-    bottom: 0; }
-
-  .header__burger {
-    top: -100%; }
-
-  .call__menu h1,
-  .call__menu h2 {
-    font-size: 40px; }
-
-  .call_back input {
-    width: 400px;
+  input {
+    width: 280px;
     height: 30px; }
 
-  .call_back_btn h1 {
-    font-size: 30px; } }
-@media (min-width: 801px) and (orientation: landscape) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-  body.lock {
-    overflow: hidden; }
-
+  .call_back_btn {
+    width: 200px; } }
+@media (min-width: 480px) and (orientation: landscape) {
   .header_menu {
-    height: 60px;
-    width: 100%;
+    position: fixed;
+    display: flex;
     bottom: 0;
-    flex-direction: row; }
-    .header_menu img {
-      width: 40px;
-      height: 40px; }
-    .header_menu p {
-      font-size: 15px; }
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: #bb7900;
+    transition: all 0.8s ease 0s; }
     .header_menu a {
-      width: 15%; }
+      width: 14%;
+      height: 100%;
+      color: #e6e6e6;
+      font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+      border: none; }
+    .header_menu img {
+      width: 100%;
+      height: 60%; }
+    .header_menu p {
+      font-size: 90%; }
 
   .header_menu.active {
-    bottom: 0; }
+    bottom: 0;
+    transition: all 0.5s ease 0s; }
 
   .header__burger {
-    top: -100%; }
+    display: block;
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 13px;
+    width: 60px;
+    height: 25px;
+    transition: all 0.5s ease 0s;
+    z-index: 1;
+    bottom: -100%; }
 
   .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    background-color: #1a1919; }
 
   .logo {
-    width: 80%; }
+    font-size: 80px;
+    color: orange; }
 
-  .call__menu h1,
-  .call__menu h2 {
-    font-size: 30px; }
+  .call_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 100%;
+    right: 0;
+    animation: pulsing 5s infinite;
+    transition: pulsing 5s infinite; }
+    .call_phone img {
+      display: block;
+      width: 20px;
+      height: 20px; }
+
+  .call__menu {
+    width: 50%;
+    height: 90%; }
+    .call__menu h1,
+    .call__menu h2 {
+      font-size: 21px; }
 
   .call__menu.active {
     top: 5%; }
 
   .btn {
-    width: 300px; }
+    width: 100%;
+    height: 60px; }
 
   .back {
-    top: 2%;
-    right: 6%; }
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 0 0 0 85%;
+    top: 0; }
     .back img {
-      width: 50px;
-      height: 50px; }
+      width: 25px;
+      height: 25px; }
 
-  .call_back input {
+  input {
+    width: 280px;
+    height: 30px; }
+
+  .call_back_btn {
+    width: 200px; }
+    .call_back_btn h1 {
+      color: orange; } }
+@media (min-width: 600px) and (orientation: portrait) {
+  .header_menu {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    background-color: #bb7900;
+    transition: all 0.8s ease 0s; }
+    .header_menu a {
+      width: 15%;
+      height: 100%;
+      color: #e6e6e6;
+      font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+      border: none; }
+    .header_menu img {
+      width: 100%;
+      height: 60%; }
+    .header_menu p {
+      font-size: 40%; }
+
+  .header_menu.active {
+    bottom: 0;
+    transition: all 0.5s ease 0s; }
+
+  .header__burger {
+    display: block;
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 13px;
+    width: 60px;
+    height: 25px;
+    transition: all 0.5s ease 0s;
+    z-index: 1;
+    bottom: -100%; }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1919; }
+
+  .logo {
+    font-size: 120px;
+    color: orange; }
+
+  .call_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    border-radius: 100%;
+    right: 0;
+    animation: pulsing 5s infinite;
+    transition: pulsing 5s infinite; }
+    .call_phone img {
+      display: block;
+      width: 40px;
+      height: 40px; }
+
+  .call__menu {
+    width: 95%;
+    height: 400px; }
+    .call__menu h1,
+    .call__menu h2 {
+      font-size: 40px; }
+
+  .call__menu.active {
+    top: 30%; }
+
+  .btn {
+    width: 100%;
+    height: 60px; }
+
+  .back {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 0 0 0 85%;
+    top: 0; }
+    .back img {
+      width: 25px;
+      height: 25px; }
+
+  input {
     width: 400px;
     height: 40px; }
 
   .call_back_btn {
     width: 300px; } }
-@media (min-width: 1020px) {
-  /* big landscape tablets, laptops, and desktops */
-  body.lock {
-    overflow: hidden; }
-
+@media (min-width: 801px) and (orientation: landscape) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
   .header_menu {
-    height: 80px;
-    width: 100%;
+    position: fixed;
+    display: flex;
     bottom: 0;
-    flex-direction: row; }
-    .header_menu img {
-      width: 50px;
-      height: 50px; }
-    .header_menu p {
-      font-size: 18px; }
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    background-color: #bb7900;
+    transition: all 0.8s ease 0s; }
     .header_menu a {
-      width: 15%; }
+      width: 15%;
+      height: 100%;
+      color: #e6e6e6;
+      font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+      border: none; }
+    .header_menu img {
+      width: 100%;
+      height: 60%; }
+    .header_menu p {
+      font-size: 70%; }
 
   .header_menu.active {
-    bottom: 0; }
+    bottom: 0;
+    transition: all 0.5s ease 0s; }
 
   .header__burger {
-    top: -100%; }
+    display: block;
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 13px;
+    width: 60px;
+    height: 25px;
+    transition: all 0.5s ease 0s;
+    z-index: 1;
+    bottom: -100%; }
 
   .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    background-color: #1a1919; }
 
-  .call__menu h1,
-  .call__menu h2 {
-    font-size: 50px; }
+  .logo {
+    color: orange;
+    font-size: 100px; }
+
+  .call_phone {
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 100%;
+    right: 0;
+    animation: pulsing 5s infinite;
+    transition: pulsing 5s infinite; }
+    .call_phone img {
+      display: block;
+      width: 40px;
+      height: 40px; }
+
+  .call__menu {
+    width: 90%;
+    height: 75%;
+    top: -100%;
+    transition: all 1s ease; }
+    .call__menu h1,
+    .call__menu h2 {
+      font-size: 40px; }
+
+  .call__menu.active {
+    top: 10%; }
 
   .btn {
-    width: 400px; }
+    width: 100%;
+    height: 20%; }
 
   .back {
-    top: 2%;
-    right: 6%; }
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 0 0 0 85%;
+    top: 0; }
     .back img {
-      width: 50px;
-      height: 50px; }
+      width: 25px;
+      height: 25px; }
 
-  .call_back input {
-    width: 500px;
+  .text_call_back {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; }
+
+  .call_back {
+    width: 40%;
+    height: 10%; }
+
+  .call_back_btn {
+    width: 35%;
+    height: 20%; } }
+@media (min-width: 1000px) and (orientation: landscape) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .header_menu {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    background-color: #bb7900;
+    transition: all 0.8s ease 0s; }
+    .header_menu a {
+      width: 15%;
+      height: 100%;
+      color: #e6e6e6;
+      font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+      border: none; }
+    .header_menu img {
+      width: 100%;
+      height: 60%; }
+    .header_menu p {
+      font-size: 70%; }
+
+  .header_menu.active {
+    bottom: 0;
+    transition: all 0.5s ease 0s; }
+
+  .header__burger {
+    display: block;
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 13px;
+    width: 60px;
+    height: 25px;
+    transition: all 0.5s ease 0s;
+    z-index: 1;
+    bottom: -100%; }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1919; }
+
+  .logo {
+    color: orange;
+    font-size: 100px; }
+
+  .call_phone {
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 100%;
+    right: 0;
+    animation: pulsing 5s infinite;
+    transition: pulsing 5s infinite; }
+    .call_phone img {
+      display: block;
+      width: 40px;
+      height: 40px; }
+
+  .call__menu {
+    width: 90%;
+    height: 75%;
+    top: -100%;
+    transition: all 1s ease; }
+    .call__menu h1,
+    .call__menu h2 {
+      font-size: 40px; }
+
+  .call__menu.active {
+    top: 10%; }
+
+  .btn {
+    width: 100%;
+    height: 20%; }
+
+  .back {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 0 0 0 85%;
+    top: 0; }
+    .back img {
+      width: 25px;
+      height: 25px; }
+
+  .text_call_back {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px; }
+
+  .call_back {
+    width: 50%; }
+    .call_back input {
+      width: 100%; }
+
+  .call_back_btn {
+    width: 35%;
+    height: 10%; } }
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .header_menu {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    background-color: #bb7900;
+    transition: all 0.8s ease 0s; }
+    .header_menu a {
+      width: 15%;
+      height: 100%;
+      color: #e6e6e6;
+      font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+      border: none; }
+    .header_menu img {
+      width: 70px;
+      height: 45px; }
+    .header_menu p {
+      font-size: 15px; }
+
+  .header_menu.active {
+    bottom: 0;
+    transition: all 0.5s ease 0s; }
+
+  .header__burger {
+    display: block;
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 13px;
+    width: 60px;
+    height: 25px;
+    transition: all 0.5s ease 0s;
+    z-index: 1;
+    bottom: -100%; }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1919; }
+
+  .logo {
+    font-size: 150px;
+    color: orange; }
+
+  .call_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    border-radius: 100%;
+    right: 0;
+    animation: pulsing 5s infinite;
+    transition: pulsing 5s infinite; }
+    .call_phone img {
+      display: block;
+      width: 40px;
+      height: 40px; }
+
+  .call__menu {
+    width: 95%;
+    height: 400px;
+    top: -100%; }
+    .call__menu h1,
+    .call__menu h2 {
+      font-size: 40px; }
+
+  .call__menu.active {
+    top: 30%; }
+
+  .btn {
+    width: 100%;
+    height: 60px; }
+
+  .back {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 0 0 0 85%;
+    top: 0; }
+    .back img {
+      width: 25px;
+      height: 25px; }
+
+  input {
+    width: 400px;
     height: 40px; }
 
   .call_back_btn {
-    width: 400px; } }
+    width: 300px; } }
 @media (min-width: 1281px) {
-  body.lock {
-    overflow: hidden; }
-
   .header_menu {
-    height: 100%;
-    width: 100px;
+    position: fixed;
+    display: flex;
     bottom: -100%;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 95px;
+    height: 100%;
+    background-color: #bb7900;
+    transition: all 0.8s ease 0s; }
+    .header_menu a {
+      height: 15%;
+      width: 100%;
+      color: #e6e6e6;
+      font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+      border: none; }
     .header_menu img {
-      width: 50px;
+      width: 90%;
       height: 50px; }
     .header_menu p {
-      font-size: 19px; }
-    .header_menu a {
-      width: auto; }
+      font-size: 16px;
+      font-weight: 650; }
 
   .header_menu.active {
-    bottom: 0; }
+    bottom: 0;
+    transition: all 0.5s ease 0s; }
 
   .header__burger {
+    display: block;
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 13px;
+    width: 60px;
+    height: 25px;
+    transition: all 0.5s ease 0s;
+    z-index: 1;
+    bottom: 0;
     top: 0; }
 
   .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    background-color: #1a1919; }
 
   .logo {
-    width: auto; }
+    font-size: 150px;
+    color: orange; }
+
+  .call_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 100%;
+    right: 0;
+    animation: pulsing 5s infinite;
+    transition: pulsing 5s infinite; }
+    .call_phone img {
+      display: block;
+      width: 40px;
+      height: 40px; }
 
   .call__menu {
-    width: 80%;
+    width: 70%;
     height: 400px; }
     .call__menu h1,
     .call__menu h2 {
-      font-size: 50px; }
+      font-size: 30px; }
 
   .call__menu.active {
-    top: 20%; }
+    top: 14%; }
 
   .btn {
-    width: 400px; }
+    width: 100%;
+    height: 60px; }
 
   .back {
-    top: 2%;
-    right: 6%; }
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 0 0 0 90%;
+    top: 10px; }
     .back img {
-      width: 50px;
-      height: 50px; }
+      width: 30px;
+      height: 30px; }
 
-  .call_back input {
-    width: 300px;
+  .text_call_back {
+    height: 50px;
+    margin-top: 30px; }
+
+  input {
+    width: 400px;
+    height: 30px; }
+
+  .call_back_btn {
+    width: 200px;
+    height: 50px; } }
+@media (min-width: 2000px) {
+  .header_menu {
+    position: fixed;
+    display: flex;
+    bottom: -100%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 95px;
+    height: 100%;
+    background-color: #bb7900;
+    transition: all 0.8s ease 0s; }
+    .header_menu a {
+      height: 15%;
+      width: 100%;
+      color: #e6e6e6;
+      font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+      border: none; }
+    .header_menu img {
+      width: 90%;
+      height: 50px; }
+    .header_menu p {
+      font-size: 16px;
+      font-weight: 650; }
+
+  .header_menu.active {
+    bottom: 0;
+    transition: all 0.5s ease 0s; }
+
+  .header__burger {
+    display: block;
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 13px;
+    width: 60px;
+    height: 25px;
+    transition: all 0.5s ease 0s;
+    z-index: 1;
+    bottom: 0;
+    top: 0; }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1919; }
+
+  .logo {
+    font-size: 200px;
+    color: orange; }
+
+  .call_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 100%;
+    right: 0;
+    animation: pulsing 5s infinite;
+    transition: pulsing 5s infinite; }
+    .call_phone img {
+      display: block;
+      width: 40px;
+      height: 40px; }
+
+  .call__menu {
+    width: 70%;
+    height: 400px; }
+    .call__menu h1,
+    .call__menu h2 {
+      font-size: 40px; }
+
+  .call__menu.active {
+    top: 14%; }
+
+  .btn {
+    width: 100%;
+    height: 60px; }
+
+  .back {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 0 0 0 90%;
+    top: 10px; }
+    .back img {
+      width: 30px;
+      height: 30px; }
+
+  .text_call_back {
+    height: 50px;
+    margin-top: 40px; }
+
+  input {
+    width: 700px;
     height: 40px; }
 
   .call_back_btn {
-    width: 400px; } }
+    width: 300px;
+    height: 80px; } }
 
 /*# sourceMappingURL=main.css.map */

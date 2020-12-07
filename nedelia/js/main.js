@@ -8,11 +8,29 @@ $(function() {
 });
 $(function() {
     $(".call_phone,.back").on("click", function(event) {
-        $(".call_phone,.call__menu,.back").toggleClass('active');
+        $(".call_phone,.call__menu,.back ").toggleClass('active');
     });
 
 });
+$(function() {
+    $(".project ,.arrow").on("click", function(event) {
+        $(".arrow").toggleClass('active')
+    });
 
+});
+$(function() {
+    $(".project1 ,.arrow1").on("click", function(event) {
+        $(".arrow1").toggleClass('active')
+    });
+
+});
+$(function() {
+    $(".project2 ,.arrow2").on("click", function(event) {
+        $(".arrow2").toggleClass('active')
+
+    });
+
+});
 
 
 $(document).ready(function() {
