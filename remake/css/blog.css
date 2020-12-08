@@ -1,0 +1,97 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: #1a1919; }
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; }
+
+.card_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 50px;
+  min-width: 0; }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 1200px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  border-bottom: 30px;
+  background-color: orange;
+  text-align: left; }
+
+.blog_img {
+  width: 100%;
+  height: 60%;
+  border-bottom: solid black 3px; }
+  .blog_img img {
+    width: 100%;
+    height: 100%; }
+
+.blog_menu {
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+  overflow-y: scroll; }
+
+.blog_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px solid grey; }
+  .blog_info img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px; }
+
+.blog_menu {
+  border-top: 2px black solid;
+  width: 100%; }
+  .blog_menu p {
+    color: black;
+    font-size: 20px; }
+
+@media (min-width: 320px) and (orientation: portrait) {
+  .card_wrapper {
+    margin-left: 0; }
+
+  .card {
+    width: 100%;
+    height: 700px; }
+    .card h2 {
+      font-size: 20px; }
+
+  .blog_info img {
+    width: 50px;
+    height: 50px; }
+
+  .blog_img {
+    height: 50%; }
+
+  .blog_menu {
+    height: 50%; } }
+
+/*# sourceMappingURL=blog.css.map */
