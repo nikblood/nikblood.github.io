@@ -20,22 +20,26 @@ p {
   position: fixed;
   width: 100%;
   height: 41px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: black;
   border-radius: 2%; }
   .nav_bar img {
     width: 40px;
     height: 40px; }
 
-.social_media img {
-  width: 30px;
-  height: 35px; }
+.social_media {
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  width: 80px; }
+  .social_media img {
+    width: 30px;
+    height: 35px; }
 
-.logo_bar img {
-  width: 50px;
-  height: 42px; }
+.logo_bar {
+  float: left; }
+  .logo_bar img {
+    width: 50px;
+    height: 42px; }
 
 .wrapper {
   display: flex;
@@ -50,7 +54,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  bottom: 10%;
+  bottom: 5%;
   text-align: center;
   width: 100%;
   height: 50px;
@@ -65,25 +69,25 @@ p {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    width: 70px;
+    width: 65px;
     height: 80px;
-    border: none;
-    border-radius: 10%; }
+    border: none; }
   .header_menu img {
     width: 40px;
     height: 40px; }
   .header_menu p {
     font-size: 15px;
+    font-weight: 290;
     color: black; }
 
 .link_img {
   width: 100%;
-  height: 70px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
-  border-radius: 10%; }
+  border-radius: 15%; }
 
 .link_img:hover {
   background-color: #1a1919;
@@ -148,29 +152,36 @@ p {
 
 .content {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-family: 'Ubuntu', sans-serif;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  height: 86%;
-  background-color: #f0f0f0; }
+  height: 90%;
+  background-color: transparent; }
 
 .logo {
-  font-size: 100px;
-  color: black;
-  font-weight: 10; }
+  display: flex; }
+  .logo img {
+    width: 500px;
+    height: 500px; }
+
+.logo_center {
+  width: 200px;
+  height: 200px; }
 
 .call_phone {
   display: flex;
+  position: absolute;
   align-items: center;
   justify-content: center;
+  top: 10%;
+  right: 13%;
   width: 50px;
   height: 50px;
   background-color: black;
   border-radius: 100%;
-  right: 0;
   animation: pulsing 5s infinite;
   transition: pulsing 5s infinite; }
   .call_phone img {
@@ -301,16 +312,7 @@ body.lock {
     height: 100px;
     transition: all 0.8s ease 0s; }
     .header_menu a {
-      width: 15%;
-      height: 70px;
-      font-family: 'Ubuntu', sans-serif;
-      text-decoration: none;
-      border: none; }
-    .header_menu img {
-      width: 100%;
-      height: 60%; }
-    .header_menu p {
-      font-size: 35%; }
+      width: 14%; }
 
   .header_menu.active {
     bottom: 0;
@@ -335,8 +337,9 @@ body.lock {
     width: 100%;
     height: 100%; }
 
-  .logo {
-    font-size: 80px; }
+  .logo img {
+    width: 400px;
+    height: 400px; }
 
   .call_phone {
     display: flex;
@@ -345,7 +348,6 @@ body.lock {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    right: 0;
     animation: pulsing 5s infinite;
     transition: pulsing 5s infinite; }
     .call_phone img {
