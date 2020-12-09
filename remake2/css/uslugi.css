@@ -11,7 +11,13 @@ body {
   height: 100%;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: #1a1919; }
+  background-color: #f0f0f0; }
+
+@font-face {
+  font-family: SF PRO;
+  src: url("../font/SF-Mono.dmg"); }
+.header_menu {
+  margin-top: 50px; }
 
 .link {
   display: flex;
@@ -25,74 +31,80 @@ body {
 
 .row {
   width: 100%;
-  height: 500px;
+  height: 100%;
+  margin-top: 60px;
   display: flex;
   justify-content: center; }
 
 .card_wrapper {
   width: 100%;
-  height: 500px;
+  height: 700px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  margin-left: 50px;
-  margin-top: 50px;
-  min-width: 0;
-  margin-bottom: 80px; }
+  align-items: center; }
 
 .card {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  width: 20%;
-  height: 400px;
-  margin-top: 30px;
-  background-color: #db920a;
-  border: solid black 3px;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border: solid black 1px;
+  border-radius: 5%;
   cursor: pointer; }
   .card img {
-    width: 50%;
-    height: 40%; }
-  .card h1 {
-    color: black;
-    font-size: 30px; }
-  .card h2 {
-    color: white;
-    font-size: 30px; }
+    width: 70px;
+    height: 70px; }
   .card button {
     width: 100%;
     height: 10%;
     background-color: #cc7512;
     font-size: 20px; }
 
-.card:hover {
-  background-color: orange;
-  transition: all 0.3 ease;
-  transform: translate(0, -5px); }
+.uslugi_text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-family: SF PRO;
+  font-size: 25px;
+  font-weight: 200; }
+
+.link {
+  text-decoration: none; }
+
+.uslugi_logo {
+  position: absolute;
+  right: 10px;
+  bottom: 10px; }
 
 @media (min-width: 320px) and (orientation: portrait) {
   .row {
     width: 100%;
-    height: 670px;
-    margin-bottom: 50 px; }
+    height: 300px; }
 
   .card_wrapper {
     width: 100%;
-    height: 670px;
-    margin-left: 0;
-    margin-top: 0; }
+    height: 600px; }
 
   .card {
-    width: 45%;
-    height: 300px;
+    width: 48%;
+    height: 130px;
     margin-top: 0px; }
-    .card h1 {
-      font-size: 17px; }
-    .card h2 {
-      font-size: 25px; } }
+    .card img {
+      width: 30px;
+      height: 30px; }
+
+  .uslugi_text {
+    font-size: 15px; } }
 @media (min-width: 480px) {
   .row {
     width: 100%;
@@ -111,66 +123,6 @@ body {
     margin-top: 0px; }
     .card h1 {
       font-size: 17px; }
-    .card h2 {
-      font-size: 25px; } }
-@media (min-width: 600px) {
-  .row {
-    width: 100%;
-    height: 450px;
-    margin-bottom: 50 px; }
-
-  .card_wrapper {
-    width: 100%;
-    height: 900px;
-    margin-left: 0;
-    margin-top: 0; }
-
-  .card {
-    width: 45%;
-    height: 400px;
-    margin-top: 0px; }
-    .card h1 {
-      font-size: 30px; }
-    .card h2 {
-      font-size: 30px; } }
-@media (min-width: 801px) {
-  .row {
-    width: 100%;
-    height: 1100px;
-    margin-bottom: 50px; }
-
-  .card_wrapper {
-    width: 100%;
-    height: 1000px;
-    margin-left: 0;
-    margin-top: 0; }
-
-  .card {
-    width: 45%;
-    height: 400px;
-    margin-top: 0px; }
-    .card h1 {
-      font-size: 25px; }
-    .card h2 {
-      font-size: 25px; } }
-@media (min-width: 1281px) {
-  .row {
-    width: 100%;
-    height: 450px;
-    margin-bottom: 50 px; }
-
-  .card_wrapper {
-    width: 100%;
-    height: 600px;
-    margin-left: 80px;
-    margin-top: 0; }
-
-  .card {
-    width: 22%;
-    height: 500px;
-    margin-top: 0px; }
-    .card h1 {
-      font-size: 25px; }
     .card h2 {
       font-size: 25px; } }
 
