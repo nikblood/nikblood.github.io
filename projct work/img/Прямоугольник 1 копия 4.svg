@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="477.594" height="86.594" viewBox="0 0 477.594 86.594">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-opacity: 0;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        mix-blend-mode: overlay;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="49.406" y="495.406" width="476.594" height="85.594" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-opacity="0.22"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-48.906 -494.906)" style="fill: ; filter: url(#filter)">
+    <path id="Прямоугольник_1_копия_4" data-name="Прямоугольник 1 копия 4" class="cls-1" d="M62.5,495.417H525.987L512.91,581.011H49.421Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-48.906 -494.906)" xlink:href="#Прямоугольник_1_копия_4" style="stroke: #fff; filter: none; fill: none"/>
+</svg>
