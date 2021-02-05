@@ -1,0 +1,87 @@
+.wrapper{
+    min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  background-color: rgb(221, 221, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fullscr{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.menu{
+    width: 700px;
+    height: 900px;
+    flex:1 1 auto;
+    background-color: rgb(252, 252, 252);
+    margin:0px auto;
+    border-radius: 20px 20px 20px 20px;
+    border:solid black 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    select{
+        height: 40px;
+    }
+    h1{
+        font-size: 30px;
+    }
+   .import{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       flex-direction: row;
+       width: 60%;
+       height: 10%;
+    
+   
+    }
+    .year{
+        display: flex;
+        width: 100%;
+        height: 20%;
+        justify-content: space-around;
+        select{
+            width: 150px;
+        }
+    }
+    .engine{
+        display: flex;
+        width: 60%;
+        height: 10%;
+        justify-content: space-around;
+    }
+    .cmq{
+        
+        display: flex;
+        width: 80%;
+        height: 10%;
+        justify-content: space-around;
+    input{height: 40px;}
+    }
+    .price{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        justify-content: space-around;
+    input{height: 200px;}
+    
+    }
+    .country{
+        display: flex;
+        width: 60%;
+        height: 10%;
+        justify-content: space-around;
+    }
+
+form{
+    width: 100%;
+    height: 100%;
+}
+}
