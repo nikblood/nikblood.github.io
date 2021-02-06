@@ -16,12 +16,14 @@
     
 
 $money = $_POST['money'];
+$money1 = $_POST['money1'];
     $percent = 100.0;
     $all = 10.0;
     $else = 4.3;
     $other = 7.5;
     $sum2 = 27.91 ;
    (float)$compute=$money * $all / $percent;
+   (float)$compute1=$money1 * $all / $percent;
 
     
 
@@ -306,12 +308,13 @@ function compute3(){
     ?>
  <?php
 
-$sum2 = 	33.43 ;
+$sum2 = 	33.45 ;
 $dollar = 27.76;
 $money = $_POST['money'];
 $money1 = $_POST['money1'];
 $eng = $_POST['eng'];
 $eng1 = $_POST['1'];
+$type = $_POST['type'];
 $nds = ($money+$compute+compute1())*20/100;
 $nds1 = compute3();
 $ndsgib = (compute4() + $money1)/100*20;
@@ -319,14 +322,27 @@ $itogo = $compute + compute1() + $nds;
 $compute = $compute ;
 $itogo1 = compute3();
 $itogo2 = (compute4()+$ndsgib);
-if($eng>2999){
+if($type=="БЕНЗИНОВЫЙ"&$eng>2999){
     $acz = compute1() *2;
     $nds = ($acz+$money+$compute)/100*20;
     $itogo = $compute + $acz + $nds;
   
 
 }
-  elseif ($eng<2999){
+  elseif ($type=="БЕНЗИНОВЫЙ"&$eng<2999){
+    $acz = compute1();
+    $nds = ($acz+$money+$compute)/100*20;
+    $itogo = $compute + $acz + $nds;
+  
+  }
+  if($type=="ДИЗЕЛЬНЫЙ"&$eng>3500){
+    $acz = compute1() *2;
+    $nds = ($acz+$money+$compute)/100*20;
+    $itogo = $compute + $acz + $nds;
+  
+
+}
+  elseif ($type=="ДИЗЕЛЬНЫЙ"&$eng<3501){
     $acz = compute1();
     $nds = ($acz+$money+$compute)/100*20;
     $itogo = $compute + $acz + $nds;
@@ -334,14 +350,36 @@ if($eng>2999){
   }
   
 ?>
-
+<!-- ...........................БЕНЗИН+ДИЗЕЛЬ -->
+<?php
+if($type=="БЕНЗИНОВЫЙ"||$type=="ДИЗЕЛЬНЫЙ"){
+?>
 <h1>ввозная пошлина:  евро: <?php echo $compute?> грн: <?php echo $compute*$sum2?></h1>
 <h1>АКЦИЗНЫЙ СБОР:  евро: <?php echo $acz?> грн: <?php echo $acz*$sum2?></h1>
 <h1>НДС: евро: <?php echo $nds?> грн: <?php echo $nds*$sum2?></h1>
 <h1>итого бензин/дизель:  евро: <?php echo $itogo?> грн: <?php echo $itogo*$sum2?></h1>
+<?php
+}?>
+<!-- // ....................................ЭЛЕКТРО -->
+<?php
+if($type=="ЭЛЕКТРИЧЕСКИЙ"){
+?>
+<h1>ввозная пошлина:  евро: <?php echo 0?> грн: <?php echo 0?></h1>
+<h1>АКЦИЗНЫЙ СБОР:  евро: <?php echo $eng1?> грн: <?php echo $eng1*$sum2?></h1>
+<h1>НДС: евро: <?php echo 0?> грн: <?php echo 0?></h1>
 <h1>итого электро: евро: <?php echo $itogo1?> грн: <?php echo $itogo1*$sum2?></h1>
+<?php
+}?>
+<!-- .........................ГИБРИД -->
+<?php
+if($type=="ГИБРИД"){
+?>
+<h1>ввозная пошлина:  евро: <?php echo $compute1?> грн: <?php echo $compute1*$sum2?></h1>
+<h1>АКЦИЗНЫЙ СБОР:  евро: <?php echo 100?> грн: <?php echo 100*$sum2?></h1>
+<h1>НДС: евро: <?php echo $ndsgib?> грн: <?php echo $ndsgib*$sum2?></h1>
 <h1>итого гибрид:  евро: <?php echo $itogo2?> грн: <?php echo $itogo2*$sum2?></h1>
-
+<?php
+}?>
 
 </body>
 </html>

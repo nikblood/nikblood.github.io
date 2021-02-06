@@ -62,7 +62,7 @@
     height: 10%;
     justify-content: space-around; }
     .menu .price input {
-      height: 200px; }
+      height: 50px; }
   .menu .country {
     display: flex;
     width: 60%;
