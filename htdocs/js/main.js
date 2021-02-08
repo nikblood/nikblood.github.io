@@ -76,12 +76,10 @@ $( '.type' )
 .change(function () {
    if ($('.type').val() == "ГИБРИД") {
       $('.year').hide();
-      $('.country').hide();
-      $('.import').show();
       $('.money1').show();
       $('.money').hide();
-      $('.impo1').show();
-      $('.impo').hide();
+      $('.cmq1').hide();
+      $('.cmq').hide();
    
       
       

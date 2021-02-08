@@ -124,8 +124,14 @@
 
 </div>
 
-
-<br>
+<!-- валюта -->
+<div class="val">
+    <h1>ВАЛЮТАЫ</h1>
+    <select class="val" name="val" id="">
+        <option value="ЕВРО">ЕВРО</option>
+        <option value="ДОЛЛАРЫ">ДОЛЛАРЫ</option>
+    </select>
+</div>
 <!-- СТОИМОСТЬ -->
 <div class="price">
     <h1>СТОИМОСТЬ</h1>
