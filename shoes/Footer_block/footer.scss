@@ -1,0 +1,142 @@
+.container3{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.Footer_Block{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.footer_container{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.social_media{
+    width: 100%;
+    height: 10%;
+    border-bottom: solid 1px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        margin-right: 20px;
+    }
+    img{}
+}
+.footer_info{
+    width: 100%;
+    padding: 30px 10vw;
+    display: flex;
+    border-bottom: solid 1px grey;
+    flex-wrap: wrap;
+}
+.column1_company{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    .Company{
+        margin-bottom: 30px;
+        font-size: 1.7vh;
+    }
+    a{
+        text-decoration: none;
+        font-size: 1.5vh;
+        color:#262626 ;
+        margin-bottom: 15px;
+    }
+}
+.column2_otzivi{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        font-size: 1.5vh;
+        color:#262626 ;
+        margin-bottom: 15px;
+    }
+}
+.column3_aboutshoes{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    .main{
+        margin-bottom: 30px;
+    }
+    a{
+        text-decoration: none;
+        font-size: 1.5vh;
+        color:#262626 ;
+        margin-bottom: 15px;
+    }
+}
+.column4_contacts{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    .contact{
+        margin-bottom: 30px;
+    }
+    h1{
+        font-size: 1.8vh;
+    }
+    a{
+        text-decoration: none;
+        font-size: 1.5vh;
+        color:#262626 ;
+        margin-bottom: 15px;
+    }
+}
+.desc{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.political{
+    a{
+        text-decoration: none;
+        font-size: 1.4vh;
+        color:#262626 ;
+        margin-right: 15px;
+    }
+}
+.visa{}
+.waxa_footer{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.waxa_foo_logo{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.waxa_foo_info{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.maid_in{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

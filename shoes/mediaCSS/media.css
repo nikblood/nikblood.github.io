@@ -1,0 +1,821 @@
+@charset "UTF-8";
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  .FirstBlock_waxashop .product_list .mob {
+    display: none; } }
+@media screen and (min-width: 280px) and (max-width: 500px) {
+  .main_nav {
+    display: none; }
+
+  .main_login_reg_container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    top: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; }
+    .main_login_reg_container .main_log_reg {
+      width: 40vw;
+      height: 94vh;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .main_login_reg_container .main_log_reg .bg_icon {
+        width: 100%;
+        height: 10%;
+        background-image: url(../img/img_waxa/login_slide_bg.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-color: #dadada; }
+        .main_login_reg_container .main_log_reg .bg_icon .icon_man_login {
+          width: 60px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background-color: #fff;
+          box-shadow: 0 0.5vh 0.5vh 0.1vh rgba(0, 0, 0, 0.1);
+          margin-top: 10%; }
+      .main_login_reg_container .main_log_reg .vk_facebook {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .main_login_reg_container .main_log_reg .vk_facebook h1 {
+          font-size: 1.5em;
+          line-height: 26px;
+          /* or 130% */
+          text-align: center;
+          letter-spacing: 0.02em;
+          margin-bottom: 2vh; }
+        .main_login_reg_container .main_log_reg .vk_facebook h2 {
+          font-size: 16px;
+          line-height: 26px;
+          /* or 162% */
+          text-align: center;
+          letter-spacing: 0.02em;
+          margin-bottom: 2vh; }
+        .main_login_reg_container .main_log_reg .vk_facebook .vk_facebook_icon {
+          width: 30%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row; }
+          .main_login_reg_container .main_log_reg .vk_facebook .vk_facebook_icon .facebook_icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: #3b5998;
+            box-shadow: 0 0.5vh 0.5vh 0.1vh rgba(0, 0, 0, 0.2); }
+          .main_login_reg_container .main_log_reg .vk_facebook .vk_facebook_icon .vk_icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0 0.5vh 0.5vh 0.1vh rgba(0, 0, 0, 0.2); }
+        .main_login_reg_container .main_log_reg .vk_facebook .ili {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 38%;
+          height: 1%;
+          border-bottom: 1px grey solid;
+          margin-top: 23%; }
+        .main_login_reg_container .main_log_reg .vk_facebook p {
+          font-size: 16px;
+          line-height: 26px;
+          /* or 162% */
+          text-align: center;
+          letter-spacing: 0.02em;
+          background-color: #fff;
+          width: 10%; }
+      .main_login_reg_container .main_log_reg .input_login {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 13px;
+        line-height: 18px;
+        /* identical to box height, or 138% */
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #7a7a7a; }
+        .main_login_reg_container .main_log_reg .input_login .input_reg {
+          width: 100%;
+          height: 60%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 5%; }
+          .main_login_reg_container .main_log_reg .input_login .input_reg .login {
+            width: 50%;
+            height: 15%;
+            text-align: center;
+            border-bottom: 1px grey solid; }
+          .main_login_reg_container .main_log_reg .input_login .input_reg .pass {
+            width: 50%;
+            height: 15%;
+            text-align: center;
+            border-bottom: 1px grey solid; }
+          .main_login_reg_container .main_log_reg .input_login .input_reg button {
+            width: 50%;
+            height: 20%;
+            background-color: #A86D06; }
+        .main_login_reg_container .main_log_reg .input_login .forgot {
+          font-size: 13px;
+          line-height: 26px;
+          /* identical to box height, or 200% */
+          text-align: center;
+          letter-spacing: 0.02em;
+          color: #262626; }
+        .main_login_reg_container .main_log_reg .input_login .want_reg {
+          font-size: 13px;
+          line-height: 26px;
+          /* identical to box height, or 200% */
+          text-align: center;
+          letter-spacing: 0.02em;
+          color: #262626; }
+      .main_login_reg_container .main_log_reg .exit_button {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .main_login_reg_container .main_log_reg .exit_button .exit_butt {
+          cursor: pointer;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #F2EADB; }
+
+  .FirstBlock_waxashop {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .FirstBlock_waxashop .waxa_header_menu {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      height: 120vh;
+      left: -100%;
+      z-index: 50; }
+    .FirstBlock_waxashop .waxa_header_container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: #fff;
+      padding: 30px 5%; }
+    .FirstBlock_waxashop .waxa_header_logo {
+      height: 20%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      border-bottom: solid grey 1px;
+      margin-top: 15vh; }
+      .FirstBlock_waxashop .waxa_header_logo img {
+        width: 30vw;
+        height: 10vh; }
+    .FirstBlock_waxashop .krest {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: #f2eadb;
+      display: flex;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      left: 70%; }
+    .FirstBlock_waxashop .waxa_header_phone {
+      height: 15%;
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border-bottom: solid grey 1px;
+      padding: 20px 0 20px 0; }
+      .FirstBlock_waxashop .waxa_header_phone .header_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1vw; }
+      .FirstBlock_waxashop .waxa_header_phone img {
+        height: 1.5vh;
+        width: 1.5vh; }
+      .FirstBlock_waxashop .waxa_header_phone h1 {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #a86d06; }
+      .FirstBlock_waxashop .waxa_header_phone p {
+        margin-left: 2vw;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: #7a7a7a; }
+    .FirstBlock_waxashop .waxa_header_links {
+      padding: 34px 0;
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: start;
+      flex-direction: column; }
+      .FirstBlock_waxashop .waxa_header_links .grey {
+        color: #7a7a7a; }
+      .FirstBlock_waxashop .waxa_header_links a {
+        margin-bottom: 10px;
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: 0.08em;
+        color: #262626; }
+    .FirstBlock_waxashop .waxa_header_footer {
+      position: inherit;
+      width: 100%;
+      height: 15%;
+      background-color: #fafafa;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-content: center; }
+      .FirstBlock_waxashop .waxa_header_footer .footer_item {
+        position: absolute;
+        bottom: 8vh;
+        height: 8%;
+        width: 80%;
+        border-top: solid grey 1px;
+        display: flex;
+        justify-content: center;
+        text-align: center; }
+        .FirstBlock_waxashop .waxa_header_footer .footer_item p {
+          font-size: 13px;
+          line-height: 18px;
+          letter-spacing: 0.02em;
+          color: #262626; }
+    .FirstBlock_waxashop .waxashop {
+      width: 95%;
+      background-color: #fff;
+      padding: 0 6vw 0 6vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      border-bottom: solid grey 1px; }
+      .FirstBlock_waxashop .waxashop .waxa_nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row; }
+        .FirstBlock_waxashop .waxashop .waxa_nav .waxa_menu {
+          width: 33.3vw;
+          height: 8vh;
+          display: flex;
+          align-items: center; }
+          .FirstBlock_waxashop .waxashop .waxa_nav .waxa_menu p {
+            font-size: 0; }
+          .FirstBlock_waxashop .waxashop .waxa_nav .waxa_menu .waxanav_circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center; }
+            .FirstBlock_waxashop .waxashop .waxa_nav .waxa_menu .waxanav_circle .burger {
+              width: 30px;
+              height: 20px;
+              display: block;
+              position: relative; }
+            .FirstBlock_waxashop .waxashop .waxa_nav .waxa_menu .waxanav_circle span {
+              background-color: black;
+              position: absolute;
+              width: 100%;
+              height: 4px;
+              top: 41%; }
+            .FirstBlock_waxashop .waxashop .waxa_nav .waxa_menu .waxanav_circle .burger:before,
+            .FirstBlock_waxashop .waxashop .waxa_nav .waxa_menu .waxanav_circle .burger:after {
+              content: "";
+              background-color: black;
+              position: absolute;
+              width: 100%;
+              height: 4px;
+              left: 0; }
+            .FirstBlock_waxashop .waxashop .waxa_nav .waxa_menu .waxanav_circle .burger:before {
+              top: 0; }
+            .FirstBlock_waxashop .waxashop .waxa_nav .waxa_menu .waxanav_circle .burger:after {
+              bottom: 0; }
+        .FirstBlock_waxashop .waxashop .waxa_nav .waxa_logo {
+          width: 33.3vw;
+          height: 8vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 0; }
+          .FirstBlock_waxashop .waxashop .waxa_nav .waxa_logo img {
+            width: 100%;
+            height: 5vh; }
+        .FirstBlock_waxashop .waxashop .waxa_nav .waxa_location {
+          width: 33.3vw;
+          height: 8vh;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end; }
+        .FirstBlock_waxashop .waxashop .waxa_nav .waxa_bin {
+          display: none; }
+    .FirstBlock_waxashop .product_list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 95%;
+      height: 5vh;
+      background-color: #fff;
+      border-bottom: solid grey 1px;
+      padding: 0 5%; }
+      .FirstBlock_waxashop .product_list p {
+        display: none; }
+      .FirstBlock_waxashop .product_list .mob {
+        font-size: 13px;
+        line-height: 26px;
+        /* identical to box height, or 200% */
+        letter-spacing: 0.08em;
+        color: #262626; }
+    .FirstBlock_waxashop .main_slider {
+      position: relative;
+      width: 95%;
+      height: 70vh;
+      min-width: 0;
+      display: flex;
+      flex-direction: row;
+      background-color: #efefef; }
+      .FirstBlock_waxashop .main_slider .slider_item {
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        .FirstBlock_waxashop .main_slider .slider_item .slider_text {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 60%;
+          align-items: center;
+          justify-content: center;
+          text-align: center; }
+          .FirstBlock_waxashop .main_slider .slider_item .slider_text .text_container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 10% 0; }
+          .FirstBlock_waxashop .main_slider .slider_item .slider_text .sell {
+            opacity: 50%;
+            color: #262626;
+            font-size: 5vw; }
+          .FirstBlock_waxashop .main_slider .slider_item .slider_text h1 {
+            font-size: 7.5vw;
+            margin-top: 10px; }
+          .FirstBlock_waxashop .main_slider .slider_item .slider_text p {
+            font-size: 4vw;
+            margin-top: 20px; }
+          .FirstBlock_waxashop .main_slider .slider_item .slider_text button {
+            margin-top: 30px;
+            width: 60%;
+            height: 20%;
+            border: solid 1px grey; }
+        .FirstBlock_waxashop .main_slider .slider_item .slider_icon {
+          width: 100%;
+          height: 40%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .FirstBlock_waxashop .main_slider .slider_item .slider_icon img {
+            width: 60%;
+            height: 100%; }
+
+  .SecondBlock_aboutus {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; }
+    .SecondBlock_aboutus .about_imgbg {
+      width: 95%;
+      height: 90%;
+      background-color: #e7e7e7;
+      background-image: url("../img/img_waxa/рамка.png");
+      background-size: 300% 300%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    .SecondBlock_aboutus .about_container {
+      width: 95%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    .SecondBlock_aboutus .about_logo {
+      font-size: 0; }
+      .SecondBlock_aboutus .about_logo img {
+        width: 30vw;
+        height: 10vh; }
+    .SecondBlock_aboutus .about_title {
+      margin-top: 0;
+      width: 90%;
+      font-size: 2vh;
+      text-align: center; }
+    .SecondBlock_aboutus .about_text {
+      margin-top: 30px;
+      font-size: 1.5vh;
+      color: #262626;
+      text-align: center;
+      width: 90%; }
+      .SecondBlock_aboutus .about_text .dekstop {
+        display: none; }
+      .SecondBlock_aboutus .about_text .mob {
+        font-size: 2vh; }
+    .SecondBlock_aboutus .about_dots {
+      text-align: center;
+      font-size: 3vh; }
+
+  .Collection_Block {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .Collection_Block .collection_container {
+      width: 95%;
+      height: 100%;
+      padding: 100px 25px 100px 25px;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    .Collection_Block .collection_title {
+      width: 100%;
+      height: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 5%; }
+      .Collection_Block .collection_title h2 {
+        font-size: 5vh;
+        color: #a86d06; }
+      .Collection_Block .collection_title p {
+        font-size: 3.5vh; }
+      .Collection_Block .collection_title h1 {
+        color: #a86d06;
+        font-size: 5vh; }
+    .Collection_Block .collection_card {
+      width: 100%;
+      height: 100%; }
+    .Collection_Block .card_row1 {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+    .Collection_Block .big_card {
+      width: 100%;
+      height: 30%;
+      margin-right: 25px;
+      background-color: orange;
+      background-image: url("../../img/img_waxa/1big.png");
+      background-size: 100% 100%; }
+    .Collection_Block .small_card {
+      width: 100%;
+      height: 100%;
+      margin-top: 10%; }
+    .Collection_Block .card1 {
+      height: 40%;
+      width: 100%;
+      background-image: url("../../img/img_waxa/small1.png");
+      background-size: 100% 100%;
+      margin-bottom: 10%; }
+    .Collection_Block .card2 {
+      height: 40%;
+      width: 100%;
+      background-image: url("../../img/img_waxa/small2.png");
+      background-size: 100% 100%; }
+    .Collection_Block .card_row2 {
+      margin-top: 25px;
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      display: none; }
+      .Collection_Block .card_row2 .big_card1 {
+        width: 50%;
+        height: 99%;
+        background-image: url("../../img/img_waxa/bigr1.png");
+        background-size: 100% 100%; }
+      .Collection_Block .card_row2 .small_card1 {
+        width: 50%;
+        height: 100%;
+        margin-right: 25px; }
+        .Collection_Block .card_row2 .small_card1 .card1 {
+          height: 47.2%;
+          width: 100%;
+          background-image: url("../../img/img_waxa/smallr1.png");
+          background-size: 100% 100%; }
+        .Collection_Block .card_row2 .small_card1 .card2 {
+          height: 48%;
+          width: 100%;
+          background-image: url("../../img/img_waxa/small2r1.png");
+          background-size: 100% 100%; }
+    .Collection_Block .card_info:hover {
+      background-color: transparent;
+      opacity: 1; }
+    .Collection_Block .card_info {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.4; }
+      .Collection_Block .card_info .card_title {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        margin-bottom: 90%; }
+        .Collection_Block .card_info .card_title h1 {
+          color: white;
+          font-size: 2vh; }
+        .Collection_Block .card_info .card_title .card_circle {
+          width: 40px;
+          height: 40px;
+          border: 1px white solid;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white; }
+      .Collection_Block .card_info .card_text {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 0 40px; }
+        .Collection_Block .card_info .card_text p {
+          font-size: 20px; }
+
+  .Subscribe_block {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .Subscribe_block .sub_container {
+      width: 95%;
+      height: 100%;
+      background-color: #f2eadb;
+      display: flex;
+      flex-direction: column; }
+    .Subscribe_block .sub_icon {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 50%; }
+      .Subscribe_block .sub_icon img {
+        width: 80%;
+        height: 100%; }
+    .Subscribe_block .sub_text {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      height: 50%;
+      flex-direction: column; }
+    .Subscribe_block .sub_p1 {
+      font-size: 2vh;
+      color: #262626;
+      margin-bottom: 10px;
+      opacity: 0.4; }
+    .Subscribe_block .sub_title {
+      font-size: 1.5vh;
+      margin-bottom: 20px; }
+    .Subscribe_block .sub_desc {
+      font-size: 2vh;
+      color: #262626;
+      margin-bottom: 20px; }
+    .Subscribe_block .sub_input {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .Subscribe_block .sub_input input {
+        width: 70%;
+        height: 3vh;
+        background-color: #f2eadb;
+        border-bottom: solid 2px grey;
+        font-size: 1.5vh;
+        margin-right: 0;
+        margin-bottom: 10%; }
+      .Subscribe_block .sub_input button {
+        border: solid grey 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 20%;
+        background-color: #f2eadb; }
+
+  .Saphire_block {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px; }
+    .Saphire_block .saphire_container {
+      width: 95%;
+      height: 100%;
+      background-image: url("../img/img_waxa/bg_spahire.png");
+      background-size: 300% 300%;
+      background-color: #e4e4e4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    .Saphire_block .saphire_logo {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .Saphire_block .saphire_logo img {
+        width: 30vw;
+        height: 10vh; }
+    .Saphire_block .saphire_title {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1.5vh; }
+    .Saphire_block .saphire_text {
+      width: 90%;
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      margin-top: 50px;
+      font-size: 2vh; }
+      .Saphire_block .saphire_text .dekstop {
+        display: none; }
+      .Saphire_block .saphire_text .mob {
+        font-size: 2vh; }
+      .Saphire_block .saphire_text span {
+        color: #a86d06;
+        font-size: 5vh; }
+
+  .Journal_block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; }
+    .Journal_block .journal_container {
+      position: relative;
+      width: 95%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #f9f9f9; }
+    .Journal_block .journal_logo {
+      position: absolute;
+      width: 100%;
+      top: 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .Journal_block .journal_logo h1 {
+        font-size: 4vh;
+        color: #a86d06; }
+      .Journal_block .journal_logo h2 {
+        font-size: 4vh; }
+      .Journal_block .journal_logo h3 {
+        position: absolute;
+        font-size: 5rem;
+        color: #a86d06;
+        bottom: -50%; }
+    .Journal_block .journal_cards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 25px 25px;
+      margin-top: 30%; }
+    .Journal_block .journal_card {
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: #ffffff;
+      box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.7);
+      margin-bottom: 25px; }
+      .Journal_block .journal_card .jcard_icon {
+        width: 100%;
+        height: 40%; }
+        .Journal_block .journal_card .jcard_icon img {
+          width: 100%;
+          height: 100%; }
+    .Journal_block .jcard_text {
+      width: 100%;
+      height: 60%;
+      padding: 20px 10px; }
+      .Journal_block .jcard_text .date {
+        margin-bottom: 15px; }
+        .Journal_block .jcard_text .date h1 {
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0.02em;
+          color: #a86d06; }
+        .Journal_block .jcard_text .date p {
+          font-size: 13px;
+          line-height: 22px;
+          letter-spacing: 0.02em; }
+      .Journal_block .jcard_text .title {
+        margin-bottom: 10px;
+        letter-spacing: 0.02em; }
+        .Journal_block .jcard_text .title h1 {
+          font-size: 1.8vh; }
+      .Journal_block .jcard_text .text {
+        margin-bottom: 10px;
+        font-size: 0.6rem;
+        letter-spacing: 0.02em; }
+      .Journal_block .jcard_text .jcard_but a {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #a86d06;
+        text-decoration: none; }
+    .Journal_block .journal_button {
+      height: 10%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .Journal_block .journal_button button {
+        width: 40vw;
+        height: 5vh;
+        background: #a86d06;
+        border: 1px solid #a86d06;
+        margin-bottom: 10%; } }
+
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,136 @@
+.Collection_Block {
+  width: 100%;
+  height: 180vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.collection_container {
+  width: 95%;
+  height: 100%;
+  padding: 100px 25px 100px 25px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.collection_title {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5%; }
+  .collection_title h2 {
+    font-size: 5vh;
+    color: #a86d06; }
+  .collection_title p {
+    font-size: 3.5vh; }
+  .collection_title h1 {
+    color: #a86d06;
+    font-size: 5vh; }
+
+.collection_card {
+  width: 100%;
+  height: 90%; }
+
+.card_row1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row; }
+
+.big_card {
+  width: 50%;
+  height: 100%;
+  margin-right: 25px;
+  background-color: orange;
+  background-image: url("../../img/img_waxa/1big.png");
+  background-size: 100% 100%; }
+
+.small_card {
+  width: 50%;
+  height: 100%; }
+
+.card1 {
+  height: 47.5%;
+  width: 100%;
+  background-image: url("../../img/img_waxa/small1.png");
+  background-size: 100% 100%;
+  margin-bottom: 25px; }
+
+.card2 {
+  height: 47.5%;
+  width: 100%;
+  background-image: url("../../img/img_waxa/small2.png");
+  background-size: 100% 100%; }
+
+.card_row2 {
+  margin-top: 25px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row; }
+  .card_row2 .big_card1 {
+    width: 50%;
+    height: 99%;
+    background-image: url("../../img/img_waxa/bigr1.png");
+    background-size: 100% 100%; }
+  .card_row2 .small_card1 {
+    width: 50%;
+    height: 100%;
+    margin-right: 25px; }
+    .card_row2 .small_card1 .card1 {
+      height: 47.2%;
+      width: 100%;
+      background-image: url("../../img/img_waxa/smallr1.png");
+      background-size: 100% 100%; }
+    .card_row2 .small_card1 .card2 {
+      height: 48%;
+      width: 100%;
+      background-image: url("../../img/img_waxa/small2r1.png");
+      background-size: 100% 100%; }
+
+.card_info:hover {
+  background-color: transparent;
+  opacity: 1; }
+
+.card_info {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4; }
+  .card_info .card_title {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin-bottom: 90%; }
+    .card_info .card_title h1 {
+      color: white;
+      font-size: 2vh; }
+    .card_info .card_title .card_circle {
+      width: 40px;
+      height: 40px;
+      border: 1px white solid;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white; }
+  .card_info .card_text {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 40px; }
+    .card_info .card_text p {
+      font-size: 20px; }
+
+/*# sourceMappingURL=Collection.css.map */

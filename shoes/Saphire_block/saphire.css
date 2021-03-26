@@ -1,0 +1,51 @@
+.Saphire_block {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px; }
+
+.saphire_container {
+  width: 95%;
+  height: 100%;
+  background-image: url("../img/img_waxa/bg_spahire.png");
+  background-size: 100% 100%;
+  background-color: #e4e4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.saphire_logo {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .saphire_logo img {
+    width: 8vw;
+    height: 10vh; }
+
+.saphire_title {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh; }
+
+.saphire_text {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 50px;
+  font-size: 1.5vh; }
+  .saphire_text span {
+    color: #A86D06;
+    font-size: 5vh; }
+
+/*# sourceMappingURL=saphire.css.map */
