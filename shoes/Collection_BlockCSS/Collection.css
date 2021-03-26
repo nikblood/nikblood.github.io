@@ -47,7 +47,7 @@
   height: 100%;
   margin-right: 25px;
   background-color: orange;
-  background-image: url("../../img/img_waxa/1big.png");
+  background-image: url("../img/img_waxa/1big.png");
   background-size: 100% 100%; }
 
 .small_card {
@@ -57,14 +57,14 @@
 .card1 {
   height: 47.5%;
   width: 100%;
-  background-image: url("../../img/img_waxa/small1.png");
+  background-image: url("../img/img_waxa/small1.png");
   background-size: 100% 100%;
   margin-bottom: 25px; }
 
 .card2 {
   height: 47.5%;
   width: 100%;
-  background-image: url("../../img/img_waxa/small2.png");
+  background-image: url("../img/img_waxa/small2.png");
   background-size: 100% 100%; }
 
 .card_row2 {
@@ -76,7 +76,7 @@
   .card_row2 .big_card1 {
     width: 50%;
     height: 99%;
-    background-image: url("../../img/img_waxa/bigr1.png");
+    background-image: url("../img/img_waxa/bigr1.png");
     background-size: 100% 100%; }
   .card_row2 .small_card1 {
     width: 50%;
@@ -85,12 +85,12 @@
     .card_row2 .small_card1 .card1 {
       height: 47.2%;
       width: 100%;
-      background-image: url("../../img/img_waxa/smallr1.png");
+      background-image: url("../img/img_waxa/smallr1.png");
       background-size: 100% 100%; }
     .card_row2 .small_card1 .card2 {
       height: 48%;
       width: 100%;
-      background-image: url("../../img/img_waxa/small2r1.png");
+      background-image: url("../img/img_waxa/small2r1.png");
       background-size: 100% 100%; }
 
 .card_info:hover {
