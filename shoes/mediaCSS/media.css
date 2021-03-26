@@ -520,7 +520,7 @@
       height: 30%;
       margin-right: 25px;
       background-color: orange;
-      background-image: url("../../img/img_waxa/1big.png");
+      background-image: url("../img/img_waxa/1big.png");
       background-size: 100% 100%; }
     .Collection_Block .small_card {
       width: 100%;
@@ -529,13 +529,13 @@
     .Collection_Block .card1 {
       height: 40%;
       width: 100%;
-      background-image: url("../../img/img_waxa/small1.png");
+      background-image: url("../img/img_waxa/small1.png");
       background-size: 100% 100%;
       margin-bottom: 10%; }
     .Collection_Block .card2 {
       height: 40%;
       width: 100%;
-      background-image: url("../../img/img_waxa/small2.png");
+      background-image: url("../img/img_waxa/small2.png");
       background-size: 100% 100%; }
     .Collection_Block .card_row2 {
       margin-top: 25px;
@@ -547,7 +547,7 @@
       .Collection_Block .card_row2 .big_card1 {
         width: 50%;
         height: 99%;
-        background-image: url("../../img/img_waxa/bigr1.png");
+        background-image: url("../img/img_waxa/bigr1.png");
         background-size: 100% 100%; }
       .Collection_Block .card_row2 .small_card1 {
         width: 50%;
@@ -556,12 +556,12 @@
         .Collection_Block .card_row2 .small_card1 .card1 {
           height: 47.2%;
           width: 100%;
-          background-image: url("../../img/img_waxa/smallr1.png");
+          background-image: url("../img/img_waxa/smallr1.png");
           background-size: 100% 100%; }
         .Collection_Block .card_row2 .small_card1 .card2 {
           height: 48%;
           width: 100%;
-          background-image: url("../../img/img_waxa/small2r1.png");
+          background-image: url("../img/img_waxa/small2r1.png");
           background-size: 100% 100%; }
     .Collection_Block .card_info:hover {
       background-color: transparent;
