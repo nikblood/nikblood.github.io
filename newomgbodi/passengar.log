@@ -1,0 +1,7 @@
+<Location /node>
+PassengerAppRoot "/home/jsjuldqk/domains/unitstroy.com/public_html/newomgbodi/node"
+PassengerBaseURI "/node"
+PassengerNodejs "/usr/local/bin/node"
+PassengerAppType node
+PassengerStartupFile index.js
+</Location>
